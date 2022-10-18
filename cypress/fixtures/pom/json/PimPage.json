@@ -1,0 +1,33 @@
+{
+    "pageName": "PimPage",
+    "domElements":
+    {
+       
+        "PIM Title":
+        {
+            "xpath": "//h6[contains(.,'PIM') and contains(@class,'oxd-text')]"
+        },
+        "Sidebar PIM":
+        {
+            "xpath": "//span[contains(.,'PIM') and contains(@class,'oxd-main-menu-item--name')]"
+        },
+        "EmployeListMenu": 
+        {
+            "xpath": "//a[contains(.,'Employee List') and contains(@class,'oxd-topbar-body-nav-tab-item')]"
+        },
+        "searchEmployeId":
+        {
+            "xpath": "//label[contains(.,'Employee Id')]/ancestor::div[@class='oxd-input-group__label-wrapper']/following-sibling::div/descendant::input[contains(@class, 'oxd-input')]"
+        },
+        "SearchEmploye": 
+        {
+            "xpath": "//div[contains(@class, 'oxd-form-actions')]/descendant::button[text()=' Search ']"
+        }
+        
+    },
+    "API": 
+    {
+        "nameApi": "PimApi",
+        "endpoint": "https://opensource-demo.orangehrmlive.com/web/index.php/api/v2/admin/subunits"
+    }
+}

@@ -1,0 +1,75 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Authentication",
+    "line": 1,
+    "id": "authentication",
+    "tags": [],
+    "uri": "authentication.feature",
+    "elements": [
+      {
+        "id": "authentication;as-a-user-can-login-to-the-application",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "As a user can login to the application",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in as Admin",
+            "result": {
+              "status": "passed",
+              "duration": 4373000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I Should be on PimPage",
+            "result": {
+              "status": "passed",
+              "duration": 2270000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "SelectorTitle",
+                      "SelectorContains"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "PIM Title",
+                      "VISIBLE"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sidebar PIM",
+                      "PIM"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I should EXPECT",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "PIM Feature",
+    "line": 1,
+    "id": "pim-feature",
+    "tags": [],
+    "uri": "pim.feature",
+    "elements": [
+      {
+        "id": "pim-feature;as-a-user,-you-can-view-and-update-employ",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "As a user, you can view and update employ",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am logged in as Admin",
+            "result": {
+              "status": "passed",
+              "duration": 24271000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I Should be on PimPage",
+            "result": {
+              "status": "passed",
+              "duration": 1898000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "SelectorTitle",
+                      "SelectorContains"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "PIM Title",
+                      "VISIBLE"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sidebar PIM",
+                      "PIM"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I should EXPECT",
+            "result": {
+              "status": "passed",
+              "duration": 77000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I am Click EmployeListMenu",
+            "result": {
+              "status": "passed",
+              "duration": 553000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "SelectorField",
+                      "FieldValue"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "searchEmployeId",
+                      "0204"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I Enter",
+            "result": {
+              "status": "passed",
+              "duration": 1544000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I am Click SearchEmploye",
+            "result": {
+              "status": "passed",
+              "duration": 94000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

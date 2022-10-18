@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -23,3 +24,22 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import LoginPage from "../fixtures/pom/js/LoginPage";
+
+
+
+Cypress.Commands.add('login', (user) => {
+
+    const login = new LoginPage()
+  
+      cy.fixture('data/user.json').then((testData) => {
+        let username = testData[`${user}`].username
+        let password = testData[`${user}`].password
+
+        login.getUsername().type(username)
+        login.getPassword().type(password)
+
+        login.getButtonLogin().click()
+      })
+  })
