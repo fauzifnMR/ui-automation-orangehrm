@@ -76,3 +76,25 @@ And(/^I Enter$/, (dataTable) => {
 
     })
 })
+
+
+And(/^In the table I checked the column (.*) with the value (.*) containing (.*) in column (.*)$/, (column1,value1,value2,column2) => {
+    cy.get('@pageName').then((SelectDomElement) => {
+        let selectorcolumn1 = SelectDomElement.domElements[`${column1}`].xpath
+        let selectorcolumn2 = SelectDomElement.domElements[`${column2}`].id
+       
+        cy.xpath(`${selectorcolumn1}`,{scrollBehavior: 'nearest'}).each(($e1, index, $list) => {
+            const text = $e1.text()
+            if(text.includes(`${value1}`)){
+                cy.xpath(`${selectorcolumn1}`).eq(index)
+                .siblings(`${selectorcolumn2}`)
+                .then(function(firstname){
+                    const firstnameText = firstname.text()
+                    expect(firstnameText).to.equal(`${value2}`)
+                })
+            }
+            
+        })
+        
+    })
+})

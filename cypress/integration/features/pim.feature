@@ -10,9 +10,11 @@ Feature: PIM Feature
 
 	Scenario: As a user, you can view and update employ
 	    When I am Click EmployeListMenu
+        And In the table I checked the column fieldEmployeID with the value 0020 containing John Smith in column fieldSupervisior
         And I Enter 
             |SelectorField    | FieldValue |
             | searchEmployeId | 0204 |
         And I am Click SearchEmploye
+        
         
     

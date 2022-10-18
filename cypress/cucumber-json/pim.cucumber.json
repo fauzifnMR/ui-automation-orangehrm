@@ -22,7 +22,7 @@
             "name": "I am logged in as Admin",
             "result": {
               "status": "passed",
-              "duration": 24271000000
+              "duration": 3791000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I Should be on PimPage",
             "result": {
               "status": "passed",
-              "duration": 1898000000
+              "duration": 1850000000
             }
           },
           {
@@ -65,7 +65,7 @@
             "name": "I should EXPECT",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 104000000
             }
           },
           {
@@ -75,7 +75,17 @@
             "name": "I am Click EmployeListMenu",
             "result": {
               "status": "passed",
-              "duration": 553000000
+              "duration": 609000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "In the table I checked the column fieldEmployeID with the value 0020 containing John Smith in column fieldSupervisior",
+            "result": {
+              "status": "passed",
+              "duration": 1549000000
             }
           },
           {
@@ -98,21 +108,21 @@
               }
             ],
             "keyword": "And ",
-            "line": 13,
+            "line": 14,
             "name": "I Enter",
             "result": {
               "status": "passed",
-              "duration": 1544000000
+              "duration": 449000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 16,
+            "line": 17,
             "name": "I am Click SearchEmploye",
             "result": {
               "status": "passed",
-              "duration": 94000000
+              "duration": 129000000
             }
           }
         ]

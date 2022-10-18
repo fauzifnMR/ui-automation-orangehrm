@@ -22,8 +22,17 @@
         "SearchEmploye": 
         {
             "xpath": "//div[contains(@class, 'oxd-form-actions')]/descendant::button[text()=' Search ']"
+        },
+        "fieldEmployeID": 
+        {
+            "xpath": "//div[contains(@class,'oxd-table-cell oxd-padding-cell') and contains(@role,'cell')][2]"
+        },
+        "fieldSupervisior": 
+        {
+            "id": ".oxd-table-cell.oxd-padding-cell:nth-child(8)"
         }
-        
+
+
     },
     "API": 
     {
